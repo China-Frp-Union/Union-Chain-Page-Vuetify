@@ -53,7 +53,7 @@ import axios from 'axios'
 const links = ref([])
 axios({
   method:'get',
-  url:'https://cdn.jsdelivr.net/gh/China-Frp-Union/Union-Chain-Page/public/list.json'
+  url:'https://cdn.jsdelivr.net/gh/China-Frp-Union/cfu-list/list.json'
 }).then((res)=>{
   console.log(res.data.links)
   links.value = res.data
