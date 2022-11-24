@@ -1,6 +1,8 @@
-# default
-
-## Project setup
+# Union-Chain-Page-Vuetify
+## JS框架: Vue.js
+## UI界面: Vuetify
+## 通过 https://cdn.jsdelivr.net/gh/China-Frp-Union/Union-Chain-Page/public/list.json 获取列表
+## 使用 Cloudflare Pages 部署于 https://cfu.mefrp.com
 
 ```
 # yarn
@@ -38,7 +40,3 @@ npm run build
 # pnpm
 pnpm build
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
