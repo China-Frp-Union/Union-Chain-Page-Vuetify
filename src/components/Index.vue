@@ -2,7 +2,7 @@
  * @Author: ahmr-bot ahmrcxy@gmail.com
  * @Date: 2022-11-24 12:54:06
  * @LastEditors: ahmr-bot ahmrcxy@gmail.com
- * @LastEditTime: 2022-11-24 16:18:07
+ * @LastEditTime: 2022-11-24 20:25:43
  * @FilePath: \Friends\Friends\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -53,7 +53,7 @@ import axios from 'axios'
 const links = ref([])
 axios({
   method:'get',
-  url:'https://cdn.jsdelivr.net/gh/China-Frp-Union/cfu-list/list.json'
+  url:'https://raw.cdn.mcserverx.com/China-Frp-Union/cfu-list/main/list.json'
 }).then((res)=>{
   console.log(res.data.links)
   links.value = res.data
