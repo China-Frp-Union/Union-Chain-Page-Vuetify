@@ -2,7 +2,7 @@
  * @Author: ahmr-bot ahmrcxy@gmail.com
  * @Date: 2022-11-24 12:54:06
  * @LastEditors: ahmr-bot ahmrcxy@gmail.com
- * @LastEditTime: 2022-11-24 21:34:45
+ * @LastEditTime: 2022-12-09 18:20:34
  * @FilePath: \Friends\Friends\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -28,7 +28,6 @@
           <v-timeline density="compact" align="start">
             <v-timeline-item
               v-for="links in links"
-              :key="links.id"
               size="x-small"
             >     <v-avatar height="125" :image="links.logo_url"></v-avatar> <div class="mb-4">
     
@@ -58,6 +57,11 @@ axios({
 }).then((res)=>{
   console.log(res.data.links)
   links.value = res.data
+
+  const jsonData = res.data;
+    // 对数据组随机排序
+    const linksr = ref([]) 
+    linksr.value = jsonData.sort(() => Math.random() - 0.5);
 })
 </script>
 <script>
